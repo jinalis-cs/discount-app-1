@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router";
     
 // Loader function - runs on server before rendering
 export const loader = async ({ request }) => {
-  // Authenticate the request
+  // Authenticate the requesthfdukjhf
   const { admin } = await authenticate.admin(request);
   
   const DiscountCodes = await admin.graphql(`
