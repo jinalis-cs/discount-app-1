@@ -52,3 +52,11 @@ export default function App() {
     </div>
   );
 }
+
+export function Index() {
+  return (
+    <div className="container mx-auto p-6">
+      <DiscountAdminPanel />
+    </div>
+  );
+}

@@ -95,6 +95,21 @@ export default function Index() {
         Generate a product
       </s-button>
 
+      <s-section heading="Discount code">
+        <s-paragraph>
+          <s-link href="/app/discounts" style={{
+            display: 'inline-block',
+            padding: '10px 20px',
+            backgroundColor: '#008060',
+            color: 'white',
+            textDecoration: 'none',
+            borderRadius: '4px'
+          }}>
+            View Discounts
+          </s-link>
+        </s-paragraph>
+      </s-section>
+
       <s-section heading="Congrats on creating a new Shopify app 🎉">
         <s-paragraph>
           This embedded app template uses{" "}
