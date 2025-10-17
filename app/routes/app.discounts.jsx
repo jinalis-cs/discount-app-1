@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router";
     
 // Loader function - runs on server before rendering
 export const loader = async ({ request }) => {
-  // Authenticate the requesthfdukjhf
+  // Authenticate the request
   const { admin } = await authenticate.admin(request);
   
   const DiscountCodes = await admin.graphql(`
@@ -64,8 +64,6 @@ export const loader = async ({ request }) => {
 `);
 
   const allDiscountCodes = await DiscountCodes.json();
-
-
   return { 
     disData: allDiscountCodes.data,
    };
@@ -81,17 +79,18 @@ export default function Discounts() {
     
         <s-section heading="List of discounts">
         <h3>Discount Code</h3>
-        {/* <p>Collections: {loaderData?.collections.collections.nodes[0].title}</p> */}
-        {/* <p>Discount Codes: {JSON.stringify(loaderData.discountCodes)}</p> */}
         {discountNodes.codeDiscountNodes.edges.map(({ node }) => {
+          console.log('Discount Node:', node);
           const id = node.id;
           const title = node.codeDiscount.title;
+          const summary = node.codeDiscount.summary;
           const code = node.codeDiscount.codes.edges[0]?.node.code;
 
           return (
             <div key={id} style={{ padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '7px' }}>
               <s-paragraph><strong>ID:</strong> {id}</s-paragraph>
               <s-paragraph><strong>Title:</strong> {title}</s-paragraph>
+              <s-paragraph><strong>Summary:</strong> {summary}</s-paragraph>
               <s-paragraph><strong>Code:</strong> {code}</s-paragraph>
             </div>
           );

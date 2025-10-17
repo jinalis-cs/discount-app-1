@@ -2,12 +2,11 @@
 
 client_id = "edabb713329201bb95780ce394f060fa"
 name = "discount-app-1"
-application_url = "https://example.com"
+application_url = "https://admiringly-unmythical-estell.ngrok-free.dev/"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-include_config_on_deploy = true
 
 [webhooks]
 api_version = "2026-01"
