@@ -2,7 +2,7 @@
 
 client_id = "edabb713329201bb95780ce394f060fa"
 name = "discount-app-1"
-application_url = "https://admiringly-unmythical-estell.ngrok-free.dev/"
+application_url = "https://must-blonde-discipline-brook.trycloudflare.com/"
 embedded = true
 
 [build]
@@ -28,7 +28,7 @@ redirect_urls = [ "https://example.com/api/auth" ]
 
 
 [app_proxy]
-url = "https://gaps-visited-associates-integrity.trycloudflare.com/api/discount"
+url = "https://must-blonde-discipline-brook.trycloudflare.com/api/discount"
 subpath = "discount"
 prefix = "apps"
 
