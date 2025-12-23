@@ -1,0 +1,13 @@
+api_version = "2024-10"
+
+[[extensions]]
+
+uid = "eae8e29d-7bb5-7588-5db7-755b8728f5a6d7bc15d3"
+
+type = "theme_app_extension"
+name = "Discount Display"
+handle = "discount-display"
+
+[extensions.extension_points]
+  [[extensions.extension_points.app_blocks]]
+  target = "body"

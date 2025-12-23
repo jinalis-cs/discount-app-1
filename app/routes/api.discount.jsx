@@ -385,10 +385,7 @@ export async function loader({ request, params }) {
       const productGid = `gid://shopify/Product/${productId}`;
       filteredDiscounts = allDiscounts.filter(discount => {
           if (discount.status !== 'ACTIVE') return false;
-                    
-          // if(!discount.customerBuys) return true;
-          console.log('title', discount.title)
-          console.log('discount__typename', discount.typename);
+         
           if(discount.typename === 'DiscountCodeFreeShipping') {
             discountJSON.push({
               'discountTitle': discount.title,

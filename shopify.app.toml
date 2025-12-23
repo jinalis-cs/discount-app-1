@@ -2,7 +2,7 @@
 
 client_id = "edabb713329201bb95780ce394f060fa"
 name = "discount-app-1"
-application_url = "https://must-blonde-discipline-brook.trycloudflare.com/"
+application_url = "https://reactions-carefully-ratio-xhtml.trycloudflare.com"
 embedded = true
 
 [build]
@@ -28,7 +28,7 @@ redirect_urls = [ "https://example.com/api/auth" ]
 
 
 [app_proxy]
-url = "https://must-blonde-discipline-brook.trycloudflare.com/api/discount"
+url = "/api/discount"
 subpath = "discount"
 prefix = "apps"
 
